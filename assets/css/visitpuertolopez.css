@@ -10,13 +10,38 @@ header h1 {
   color: inherit;
 }
 
+header a h1 {
+	color: #333333;
+	text-decoration: none;
+}
+
 /* INTRODUCTION */
 
+#introduction hr {
+	margin-top: 0px;
+	margin-bottom: 25px;
+}
+
 #introduction h1 {
+	font-size: 45px;
+	margin-top: 40px;
+	margin-bottom: 25px;
+}
+
+#introduction h2 {
+ 	font-size: 35px;
+	margin-top: 40px;
 	margin-bottom: 20px;
+	border-bottom: 1px solid #eeeeee;
 }
 
 #introduction p {
+	font-size: 25px;
+	line-height: 1.4;
+	margin-bottom: 25px;
+}
+
+#introduction li {
 	font-size: 25px;
 	line-height: 1.5;
 }
@@ -33,6 +58,12 @@ float: right;
 
 .grid {
 	position: relative;
+}
+
+.empty {
+	height: 400px;
+	width: 300px;
+	background-color: #EEEEEE;
 }
 
 .caption {
