@@ -4,6 +4,9 @@ desc "Build with Jekyll"
 task :build do
   puts "Building with Jekyll..."
   system("jekyll")
+  
+  # HACK: something in Jekyll is being stupid
+  system("cp .htaccess _site/")
 end
 
 desc "Build & Serve with Jekyll"

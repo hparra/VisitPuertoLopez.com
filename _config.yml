@@ -9,6 +9,7 @@ source:      .
 destination: ./_site
 plugins:     ./_plugins
 
+include:     [.htaccess]
 exclude:     [Rakefile, README.md]
 
 future:      true
