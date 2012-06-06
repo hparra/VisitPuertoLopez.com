@@ -30,4 +30,4 @@ carousel_items:
 
 #Puerto Lopez is waiting!
 
-Puerto Lopez is a traditional fishing town on the central coast of Ecuador famous for humpback whale watching, the Machalilla National Park, and the poor man's alternative to the Galapagos, Isla de la Plata. There's tons to see, including trails, forests, beaches and reefs. The Puerto Lopez beach is lined with with huts where you can grab a drink, and local & international cuisine is served all day. When you're ready to relax choose among a variety of hotels & hostels. There is something for everyone, so come on down!
+Puerto Lopez is a traditional fishing town on the central coast of Ecuador famous for humpback whale watching, the Machalilla National Park, and the poor man's alternative to the Galapagos, Isla de la Plata. There's tons to see, including trails, forests, beaches and reefs. The Puerto Lopez beach is lined with huts where you can grab a drink, and restaurants throughout the town serve local & international cuisine is all day. When you're ready to relax choose among a variety of hotels & hostels. There is something for everyone, so come on down!
