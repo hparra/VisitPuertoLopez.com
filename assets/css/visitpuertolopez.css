@@ -1,3 +1,6 @@
+body {
+}
+
 .container {
 }
 
@@ -13,6 +16,10 @@ header h1 {
 header a h1 {
 	color: #333333;
 	text-decoration: none;
+}
+
+#title {
+	margin: 20px 0 20px 0;
 }
 
 /* INTRODUCTION */

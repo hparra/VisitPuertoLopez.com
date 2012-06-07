@@ -30,35 +30,36 @@
 
 	<body data-spy="scroll" data-target=".subnav" data-offset="50">
 
-		<div class="container">
-		
+
+
+         <div class="container">
+			
 			<header>
-				<div>
-					<h1>Visit Puerto Lopez, Ecuador!</h1>
-				</div>
-			</header>    
- 		    <hr class="soften" />
-
-		<!-- PHOTO CAROUSEL -->
-		<div id="myCarousel" class="carousel slide">
-        	<div class="carousel-inner">
-				{% for item in page.carousel_items %}
-				<div class="item {% if forloop.first %} active {% endif %}">
-					<img src="{{ASSET_URL}}/assets/img/photos/{{item.filename}}" alt="{{item.caption_title}}">
-					<div class="carousel-caption">
-						<h4>{{item.caption_title}}</h4>
-						<p>{{item.caption_desc}}</p>
+				   <img id="title" src="{{ASSET_PATH}}/assets/img/VisitPuertoLopez_Title_LosFrailes.png" width="940" height="176" alt="Puerto Lopez, Ecuador"> 
+			</header>
+	
+			<!-- PHOTO CAROUSEL -->
+			<div id="myCarousel" class="carousel slide">
+	        	<div class="carousel-inner">
+					{% for item in page.carousel_items %}
+					<div class="item {% if forloop.first %} active {% endif %}">
+						<img src="{{ASSET_URL}}/assets/img/photos/{{item.filename}}" alt="{{item.caption_title}}">
+						<div class="carousel-caption">
+							<h4>{{item.caption_title}}</h4>
+							<p>{{item.caption_desc}}</p>
+						</div>
 					</div>
+					{% endfor %}   
 				</div>
-				{% endfor %}   
-			</div>
-			<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-			<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a> 
-		</div> 
-        <!-- / PHOTO CAROUSEL -->
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a> 
+			</div> 
+	        <!-- / PHOTO CAROUSEL -->
+		</div>
 
 
-     	 
+		<div class="container">
+	        	 
 		<div class="row" id="introduction">			
 			
 			<div class="span9">
