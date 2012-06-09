@@ -2,7 +2,8 @@
 
 layout: page_v2
 title: Introduction
-description: Things to see and do in Puerto Lopez and the Machalilla National Park in Ecuador nature trails, beaches, museums, cloud forest
+description: There are many things to do an see in Puerto Lopez and the Machalilla National Park in Ecuador: watch whales, scuba dive, and trek islands, beaches & cloud forest!
+
 keywords: puerto lopez manabi ecuador isla de la plata machalilla national park
 
 carousel_images:
