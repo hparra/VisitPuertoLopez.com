@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/Place">
 	<head>
 		<meta charset="utf-8">
-		<title>Visit Puerto Lopez, Ecuador! > {{page.title}}</title>
+		<title>VisitPuertoLopez.com: {{page.title}}</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="{{page.description}}">
 		<meta name="keywords" content="{{page.keywords}}">
 		<meta name="author" content="Hector Parra Alvarez">
+        <meta property="fb:admins" content="100001364815009" />
 
 		<link href="{{ASSET_URL}}/assets/css/bootstrap.css" rel="stylesheet">
 		<!-- NOT RESPONSIVE, YET -->
@@ -25,8 +26,23 @@
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"-->
 		
+		<!-- GOOGLE ANALYTICS -->
 		{% include analytics.html %}
-	</head> 
+		
+		<!-- FACEBOOK OPENGRAPH -->
+		<!-- https://developers.facebook.com/docs/reference/plugins/like/ -->
+		<meta property="og:title" content="VisitPuertoLopez.com: {{page.title}}" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://visitpuertolopez.com" />
+		<meta property="og:image" content="http://visitpuertolopez.com/assets/img/photos/Whales_Breach_300.jpg" />
+		<meta property="og:site_name" content="VisitPuertoLopez.com" />
+		<meta property="fb:admins" content="100001364815009" />
+		
+		<!-- GOOGLE PLUES ONE SNIPPET -->
+		<!-- http://www.google.com/webmasters/+1/button/index.html -->
+		<meta itemprop="name" content="VisitPuertoLopez.com: {{page.title}}">
+		<meta itemprop="description" content="{{page.description}}">
+	</head>
 
 	<body data-spy="scroll" data-target=".subnav" data-offset="50">
 
@@ -88,6 +104,18 @@
 					<div class="span9">
 						<!-- WE PUT CONTENT HERE -->		
 						{{content}}
+						<div class="content_footer">
+							
+							<!-- Facebook -->
+							<div id="fblike">
+								<fb:like href="http://facebook.com/VisitPuertoLopez" send="false" layout="button_count" width="90" height="20"   show_faces="false" font="arial"></fb:like>
+							</div>
+							
+							<!-- Google+ -->
+							<div id="gplusone">
+								<g:plusone size="medium"></g:plusone>
+							</div>
+						</div>
 					</div>
 			
 					<div class="span3">				
@@ -118,9 +146,27 @@
 
 
 
-        <!-- JAVASCRIPT -->
+        <!-- LOCAL JAVASCRIPT -->
 		<script src="{{ASSET_URL}}/assets/js/jquery.js"></script>
 		<script src="{{ASSET_URL}}/assets/js/bootstrap.js"></script>
-
+        
+		<!-- FACEBOOK LIKE -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		
+		<!-- GOOGLE+ +1 -->
+		<script type="text/javascript">
+		  (function() {
+		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		    po.src = 'https://apis.google.com/js/plusone.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		  })();
+		</script>
 	</body>
 </html>
