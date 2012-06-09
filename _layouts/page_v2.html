@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Visit Puerto Lopez, Ecuador! > {{page.title}}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="{{page.description}}">
+		<meta name="keywords" content="{{page.keywords}}">
+		<meta name="author" content="Hector Parra Alvarez">
+
+		<link href="{{ASSET_URL}}/assets/css/bootstrap.css" rel="stylesheet">
+		<!-- NOT RESPONSIVE, YET -->
+		<!--link href="assets/css/bootstrap-responsive.css" rel="stylesheet"-->
+		<link href="{{ASSET_URL}}/assets/css/visitpuertolopez_v2.css" rel="stylesheet">
+
+		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!-- TODO -->
+		<!--link rel="shortcut icon" href="assets/ico/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"-->
+		
+		{% include analytics.html %}
+	</head> 
+
+	<body data-spy="scroll" data-target=".subnav" data-offset="50">
+
+			<header>
+				<div class="container">
+					<div class="row">
+						<div class="span9>">
+						    <a href="http://visitpuertolopez.com">
+								<img id="title" src="{{ASSET_PATH}}/assets/img/VisitPuertoLopez.com_Title_LosFrailes.png" width="700" height="215" alt="Puerto Lopez, Ecuador">
+							</a>
+						</div>
+
+						<div class="span3">				
+						</div>
+					 </div> 
+				</div>
+			</header>    
+            
+		    <div id="photo_layer">
+				<div class="container">
+					<div class="row">			
+			
+						<div class="span9">
+							{% if page.carousel_images %}
+							<!-- PHOTO CAROUSEL -->
+							<div id="myCarousel" class="carousel slide">
+					        	<div class="carousel-inner">
+									{% for item in page.carousel_images %}
+									<div class="item {% if forloop.first %} active {% endif %}">
+										<img src="{{ASSET_URL}}/{{item.src}}" alt="{{item.alt}}">
+										<div class="carousel-caption">
+											<h4>{{item.alt}}</h4>
+											<p>{{item.desc}}</p>
+										</div>
+									</div>
+									{% endfor %}   
+								</div>
+								<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+								<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a> 
+							</div> 
+					        <!-- / PHOTO CAROUSEL --> 
+							{% else %}
+							<img src="{{ASSET_PATH}}/{{page.splash_image.src}}" width="700" height="392" alt="{{page.splash_image.alt}}">
+							{% endif %}
+						</div>
+			
+						<div class="span3">
+							<!-- EMPTY -->				
+						</div>
+					</div>
+				</div> 
+			</div>
+
+
+
+			<div class="container">
+				<div class="row" id="introduction">			
+			
+					<div class="span9">
+						<!-- WE PUT CONTENT HERE -->		
+						{{content}}
+					</div>
+			
+					<div class="span3">				
+						<!-- Google AdSense -->
+		                {% include adsense_wideskyscraper.html %}
+						<!-- / Google AdSense -->
+					</div>
+				</div>
+				
+				<!-- SECTiONS -->
+				<hr class="soften" />      
+		        {% include sections.html %}
+			</div>
+        
+
+   	    
+		<!-- FOOTER -->
+		<footer class="footer">
+			<div class="container">
+				
+				<img id="title_mini" src="{{ASSET_PATH}}/assets/img/VisitPuertoLopez_Title_LosFrailes.png" width="346" height="64" alt="Puerto Lopez, Ecuador"> 
+				<p class="pull-right btt"><a href="#">Back to top</a></p>
+				<p>Version 1.1<br/>Designed and built by HGPA. Copyright 2012</p>
+			</div>
+		</footer>
+
+    </div><!-- /container -->
+
+
+
+        <!-- JAVASCRIPT -->
+		<script src="{{ASSET_URL}}/assets/js/jquery.js"></script>
+		<script src="{{ASSET_URL}}/assets/js/bootstrap.js"></script>
+
+	</body>
+</html>

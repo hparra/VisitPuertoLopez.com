@@ -1,0 +1,129 @@
+/* colorscheme: http://colorschemedesigner.com/#3u11UhJzZirGv */
+
+body {
+}
+
+.container {
+}
+
+header h1 {
+	margin-top: 40px;
+	margin-bottom: 10px;
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: inherit;
+}
+
+header {
+	background-color: #B7D4E5;
+}
+
+#title {
+	margin: 20px 0 20px 0;
+}
+
+header a h1 {
+	color: #333333;
+	text-decoration: none;
+}
+
+#photo_layer {
+	background-color: #2F698B;
+}
+
+#photo_layer .span_9 {
+}
+
+.carousel {
+	margin: 0px;
+}
+
+/* INTRODUCTION */
+
+#introduction hr {
+	margin-top: 0px;
+	margin-bottom: 25px;
+}
+
+#introduction h1 {
+	font-size: 45px;
+	margin-top: 40px;
+	margin-bottom: 25px;
+}
+
+#introduction h2 {
+ 	font-size: 35px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #eeeeee;
+}
+
+#introduction p {
+	font-size: 25px;
+	line-height: 1.4;
+	margin-bottom: 25px;
+}
+
+#introduction li {
+	font-size: 25px;
+	line-height: 1.5;
+}
+
+#introduction .skyscraper {
+float: right;
+margin-top: 100px;
+}
+
+
+
+#sections h2 {
+	font-size: 48px;
+	line-height: 72px;
+}
+
+#sections h3 {
+	font-size: 24px;
+	line-height: 42px;
+}
+
+.grid {
+	position: relative;
+}
+
+.empty {
+	height: 400px;
+	width: 300px;
+	background-color: #EEEEEE;
+}
+
+.caption {
+	position: absolute;
+	top: 0;
+	left: 0;
+ 	background-color: rgba(0, 0, 0, 0.75);
+	color: white;
+	padding: 10px;
+}
+
+.footer {
+	margin-top: 100px;
+	height: 150px;
+	background-color: #B7D4E5;
+}
+
+#title_mini {
+	margin: 20px 0 10px 0;
+}
+
+.btt {
+	margin-top: 20px;
+}
+
+#ad_one {
+	position: absolute;
+}
+
+#sections .row {
+	margin-top: 20px;
+}
